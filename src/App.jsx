@@ -16,8 +16,8 @@ export default function App() {
   }, []);
   console.log("component loaded");
   return (
-    <div className="App">
-      <div ref={mapElement}></div>
+    <div className="app">
+      <div ref={mapElement} className="map"></div>
     </div>
   );
 }
