@@ -22,6 +22,17 @@ export default function App() {
       zoom: 14,
     });
     setMap(map);
+
+    const addMarker = () => {
+      const element = document.createElement("div");
+      element.className = "marker";
+
+      const addMarker = new tt.Marker({
+        draggable: true,
+        element: element,
+      });
+    };
+
     return () => map.remove();
   }, [longitude, latitude]);
 
